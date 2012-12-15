@@ -1,0 +1,14 @@
+<alfresco-config area="mimetype-map">
+   
+   <config evaluator="string-compare" condition="Mimetype Map">
+      <mimetypes>
+         <mimetype mimetype="application/vnd.corel-draw" display="CorelDraw">
+            <extension>cdr</extension>
+         </mimetype>
+         <mimetype mimetype="application/vnd.sketchup.skp" display="SketchUp File">
+            <extension>skp</extension>
+         </mimetype>
+      </mimetypes>
+   </config>
+   
+</alfresco-config>
