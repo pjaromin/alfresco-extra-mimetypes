@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd"> 
+<!-- Log4j Configuration --> 
+<!-- $Id: log4j.xml 1452 2008-02-22 20:04:22Z clottes $ --> 
+<!-- 
+| For more configuration infromation and examples see the Jakarta Log4j 
+| owebsite: http://jakarta.apache.org/log4j 
+--> 
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/" debug="false"> 
+<appender name="FILE" class="org.apache.log4j.DailyRollingFileAppender"> 
+	<param name="File" value="/Users/stringlarson/tmp/myriad.log"/>
+	<param name="DatePattern" value="'.'yyyy-MM-dd"/>
+	<param name="Append" value="true"/> 
+	<layout class="org.apache.log4j.PatternLayout"> 
+		<param name="ConversionPattern" value="%-6r [%-5p] %c{3} - [%M.%L] %m%n"/> 
+	</layout> 
+</appender> 
+<!-- Append messages to the console --> 
+<appender name="CONSOLE" class="org.apache.log4j.ConsoleAppender"> 
+	<param name="Target" value="System.out"/> 
+	<layout class="org.apache.log4j.PatternLayout"> 
+<!-- The default pattern: Date Priority [Category] Message\n --> 
+		<param name="ConversionPattern" value="%-6r [%-5p] %c{3} - [%M.%L] %m%n"/> 
+	</layout> 
+</appender> 
+
+
+
+<!-- RULES for logging DEBUG < INFO < WARN < ERROR < FATAL.  --> 
+
+<category name="org.hibernate.SQL" additivity="false"> 
+<priority value="INFO"/> 
+<appender-ref ref="CONSOLE"/>
+</category> 
+
+<category name="com.jgsullivan" additivity="false"> 
+<priority value="INFO"/> 
+<appender-ref ref="CONSOLE"/>
+</category> 
+
+<category name="org.apache.struts2.components" additivity="false"> 
+<priority value="INFO"/> 
+<appender-ref ref="CONSOLE"/>
+</category> 
+
+
+<root> 
+<priority value="WARN"/> 
+<appender-ref ref="CONSOLE"/>
+</root> 
+
+
+</log4j:configuration>
