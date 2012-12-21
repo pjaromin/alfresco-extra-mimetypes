@@ -38,6 +38,19 @@ import org.apache.commons.logging.LogFactory;
  */
 public class ZipFormatContentTransformer extends AbstractContentTransformer2 {
 
+	/*
+	 * (non-Javadoc)
+	 * @see org.alfresco.repo.content.transform.AbstractContentTransformerLimits#isTransformable(java.lang.String, java.lang.String, org.alfresco.service.cmr.repository.TransformationOptions)
+	 */
+	@Override
+	public boolean isTransformable(String sourceMimetype,
+			String targetMimetype, TransformationOptions options) {
+		// Best we can really do at this point is check if the source is a ZIP.
+		// Narrow down in a sub-class if necessary.
+		return "application/zip".equals(sourceMimetype)
+				|| "application/x-zip-compressed".equals(sourceMimetype);
+	}
+
 	private String zipEntryPath;
 	
 	@Override

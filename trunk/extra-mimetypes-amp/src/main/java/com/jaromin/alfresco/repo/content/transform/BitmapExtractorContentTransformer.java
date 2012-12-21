@@ -57,7 +57,7 @@ public class BitmapExtractorContentTransformer extends AbstractContentTransforme
 	 * @see org.alfresco.repo.content.transform.AbstractContentTransformerLimits#isTransformable(java.lang.String, java.lang.String, org.alfresco.service.cmr.repository.TransformationOptions)
 	 */
 	@Override
-	public boolean isTransformableMimetype(String sourceMimetype,
+	public boolean isTransformable(String sourceMimetype,
 			String targetMimetype, TransformationOptions options) {
 		return extractors.containsKey(sourceMimetype);
 	}
