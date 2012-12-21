@@ -34,7 +34,7 @@ public class WindowsBmpExtractorTest {
 	public void testCountBitmapsFile() {
 		Map<String, Integer> bmps = new HashMap<String,Integer>();
 //		bmps.put("Snapshot.bmp", 1);
-		bmps.put("coreldraw/preX4/business card.cdr", 24);
+//		bmps.put("coreldraw/preX4/business card.cdr", 24);
 
 		try {
 			for (Entry<String,Integer> e : bmps.entrySet()) {
@@ -60,13 +60,13 @@ public class WindowsBmpExtractorTest {
 			FileInputStream in = new FileInputStream(file);
 			int count = extractor.countBitmaps(in);
 
-			for (int i = 0; i < count; i++) {
-				int n = i+1;
-				in = new FileInputStream(file);
-				OutputStream out = new FileOutputStream(new File(outputDir, "extracted." + n + ".png"));
-				boolean success = extractor.extractBitmap(n, in, out);
-				assertTrue(success);
-			}
+//			for (int i = 0; i < count; i++) {
+//				int n = i+1;
+//				in = new FileInputStream(file);
+//				OutputStream out = new FileOutputStream(new File(outputDir, "extracted." + n + ".png"));
+//				boolean success = extractor.extractBitmap(n, in, out);
+//				assertTrue(success);
+//			}
 		} 
 		catch (IOException e) {
 			e.printStackTrace();

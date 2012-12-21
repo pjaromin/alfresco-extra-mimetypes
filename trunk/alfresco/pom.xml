@@ -20,7 +20,7 @@
 
     <parent>
         <groupId>com.jaromin.alfresco</groupId>
-        <artifactId>extra-mimetypes</artifactId>
+        <artifactId>alfresco-extra-mimetypes</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
