@@ -31,7 +31,7 @@ public class CorelDrawContentTransformerTest {
 		String[] cdrs = new String[]{"Rosette.cdr","3Pages.cdr"};
 		try {
 			for (String cdr : cdrs) {
-				InputStream in = new FileInputStream(new File("src/test/resources/coreldraw/" + cdr));
+				InputStream in = new FileInputStream(new File("../src/test/resources/coreldraw/" + cdr));
 				OutputStream pdf = new FileOutputStream(new File(outputDir, cdr + ".pdf"));
 				ZipInputStream zip = new ZipInputStream(in);
 				transformer.writePDF(zip, pdf);

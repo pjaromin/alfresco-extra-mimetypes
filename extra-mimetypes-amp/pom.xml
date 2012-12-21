@@ -17,7 +17,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.jaromin.alfresco</groupId>
+	<parent>
+        <groupId>com.jaromin.alfresco</groupId>
+        <artifactId>alfresco-extra-mimetypes</artifactId>
+        <version>0.5-SNAPSHOT</version>
+    </parent>
 	<artifactId>extra-mimetypes-amp</artifactId>
 	<packaging>amp</packaging>
 	<name>Alfresco Extra Mimetypes AMP</name>
@@ -31,7 +35,6 @@
 		below as the AMP module version. Instead we use the
 		buildnumber-maven-plugin. This requires a scm connection.
 	-->
-	<version>0.5-SNAPSHOT</version>
 	<description>AMP for adding extra mimetypes to Alfresco (CDR, SKP)</description>
 	<repositories>
 		<repository>
@@ -133,7 +136,12 @@
             <version>${spring.version}</version>
             <scope>provided</scope>
         </dependency>
-        
+		<dependency>
+			<groupId>com.jaromin.alfresco</groupId>
+			<artifactId>extractors-lib</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+	    
         <!-- Test dependencies -->
 		<dependency>
 			<groupId>junit</groupId>

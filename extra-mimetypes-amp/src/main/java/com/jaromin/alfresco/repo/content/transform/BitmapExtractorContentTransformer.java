@@ -27,6 +27,8 @@ import org.alfresco.service.cmr.repository.TransformationOptions;
 import org.apache.commons.lang.StringUtils;
 import org.apache.tika.io.IOUtils;
 
+import com.jaromin.alfresco.extractor.BitmapExtractor;
+
 /**
  * Extracts the embedded PNG file from a SketchUp file.
  * @author pjaromin
