@@ -67,7 +67,7 @@ public class CorelDrawContentTransformer extends ZipFormatContentTransformer {
 	private static final String MIMETYPE_PDF = "application/pdf";
 
 	@Override
-	public boolean isTransformableMimetype(String sourceMimetype,
+	public boolean isTransformable(String sourceMimetype,
 			String targetMimetype, TransformationOptions options) {
 		return MIMETYPE_CDR.equals(sourceMimetype) 
 				&& (MIMETYPE_BMP.equals(targetMimetype) 

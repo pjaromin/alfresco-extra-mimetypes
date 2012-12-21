@@ -6,11 +6,11 @@
 	<groupId>com.jaromin.alfresco</groupId>
 	<artifactId>alfresco-extra-mimetypes</artifactId>
 	<packaging>pom</packaging>
-	<version>0.5-SNAPSHOT</version>
+	<version>0.6-SNAPSHOT</version>
 	<name>Alresco Extra Mimetypes Project</name>
 
 	<modules>
-		<module>extractors-lib</module>
+		<module>extractors</module>
 		<module>extra-mimetypes-amp</module>
 	</modules>
 
