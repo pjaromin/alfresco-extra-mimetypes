@@ -22,7 +22,7 @@
         <artifactId>alfresco-extra-mimetypes</artifactId>
         <version>0.6-SNAPSHOT</version>
     </parent>
-	<artifactId>extra-mimetypes-amp</artifactId>
+	<artifactId>extra-mimetypes</artifactId>
 	<packaging>amp</packaging>
 	<name>Alfresco Extra Mimetypes AMP</name>
 	<!--
