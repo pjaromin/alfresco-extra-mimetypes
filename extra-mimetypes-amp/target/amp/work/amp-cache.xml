@@ -1,0 +1,21 @@
+<webapp-structure>
+  <registeredFiles>
+    <entry>
+      <string>currentBuild</string>
+      <path-set>
+        <pathsSet class="linked-hash-set">
+          <string>lib/extra-mimetypes-amp-0.5-SNAPSHOT.jar</string>
+          <string>config/alfresco/extension/dev-log4j.properties</string>
+          <string>config/alfresco/extension/mimetype/mimetypes-extension-map.xml</string>
+          <string>config/alfresco/module/extra-mimetypes-amp/context/content-services-context.xml</string>
+          <string>config/alfresco/module/extra-mimetypes-amp/context/coreldraw-transfomer-context.xml</string>
+          <string>config/alfresco/module/extra-mimetypes-amp/context/sketchup-transfomers-context.xml</string>
+          <string>config/alfresco/module/extra-mimetypes-amp/log4j.properties</string>
+          <string>config/alfresco/module/extra-mimetypes-amp/module-context.xml</string>
+          <string>web/licenses/README-licenses.txt</string>
+          <string>module.properties</string>
+        </pathsSet>
+      </path-set>
+    </entry>
+  </registeredFiles>
+</webapp-structure>
