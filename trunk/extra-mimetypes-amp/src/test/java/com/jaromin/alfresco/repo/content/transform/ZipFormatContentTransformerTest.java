@@ -38,7 +38,7 @@ public class ZipFormatContentTransformerTest {
 
 		try {
 			for (Map.Entry<String,String> entry : entries.entrySet()) {
-				ZipInputStream zip = new ZipInputStream(new FileInputStream("src/test/resources/zip/" + entry.getKey()));
+				ZipInputStream zip = new ZipInputStream(new FileInputStream("../src/test/resources/zip/" + entry.getKey()));
 				String ext = FilenameUtils.getExtension(entry.getValue());
 				FileOutputStream out = new FileOutputStream(new File(outputDir,entry.getKey() + "." + ext));
 				transformer.extractEntry(entry.getValue(), zip, out);
