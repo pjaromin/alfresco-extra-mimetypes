@@ -10,7 +10,7 @@
 		<property name="extractors">
 			<map>
 				<entry key="application/vnd.sketchup.skp">
-					<bean class="com.jaromin.alfresco.repo.content.transform.PngExtractor" />
+					<bean class="com.jaromin.alfresco.extractor.PngExtractor" />
 				</entry>
 			</map>
 		</property>
