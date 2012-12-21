@@ -8,9 +8,9 @@
         <version>0.5-SNAPSHOT</version>
     </parent>
 
-	<artifactId>extractors-lib</artifactId>
+	<artifactId>extractors</artifactId>
 	<packaging>jar</packaging>
-	<name>extractors-lib</name>
+	<name>extractors</name>
 	<description>Shared library of extraction code for retrieving bitmaps/previews/thumbnails from various file formats.</description>
     <url>http://code.google.com/p/alfresco-extra-mimetypes/</url>
     
