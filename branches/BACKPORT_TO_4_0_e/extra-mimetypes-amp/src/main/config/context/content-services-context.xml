@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE beans PUBLIC '-//SPRING//DTD BEAN//EN' 'http://www.springframework.org/dtd/spring-beans.dtd'>
+<beans>
+
+	<!-- Bitmap Extractor Base Transformer -->
+	<bean id="transformer.base.BitmapExtractor"
+		class="com.jaromin.alfresco.repo.content.transform.BitmapExtractorContentTransformer"
+		parent="baseContentTransformer"
+		abstract="true">
+		<property name="extractors">
+			<map>
+				<entry key="application/vnd.sketchup.skp">
+					<bean class="com.jaromin.alfresco.extractor.PngExtractor" />
+				</entry>
+			</map>
+		</property>
+	</bean>
+
+</beans>

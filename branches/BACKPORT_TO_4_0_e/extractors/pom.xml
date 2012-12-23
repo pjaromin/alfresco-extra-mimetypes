@@ -1,0 +1,80 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	
+	<parent>
+        <groupId>com.jaromin.alfresco</groupId>
+        <artifactId>alfresco-extra-mimetypes</artifactId>
+        <version>0.6-SNAPSHOT</version>
+    </parent>
+
+	<artifactId>extractors</artifactId>
+	<packaging>jar</packaging>
+	<name>extractors</name>
+	<description>Shared library of extraction code for retrieving bitmaps/previews/thumbnails from various file formats.</description>
+    <url>http://code.google.com/p/alfresco-extra-mimetypes/</url>
+    
+	<licenses>
+        <license>
+            <name>Apache 2</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+            <comments>A business-friendly OSS license</comments>
+        </license>
+    </licenses>
+    
+    <organization>
+        <name>Patrick Jaromin</name>
+        <url>http://tenonandspline.com/blog/archives/category/alfresco</url>
+    </organization>
+
+    <developers>
+        <developer>
+            <id>pjaromin</id>
+            <name>Patrick Jaromin</name>
+            <email>patrick@jaromin.com</email>
+            <url>http://tenonandspline.com/blog/archives/category/alfresco</url>
+            <roles>
+                <role>developer</role>
+            </roles>
+            <timezone>-6</timezone>
+        </developer>
+    </developers>
+
+	<!-- ============================================================================== -->
+	<!-- == DEPENDENCIES == -->
+	<!-- ============================================================================== -->
+	<dependencies>
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>2.6</version>
+			<type>jar</type>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>1.4</version>
+			<type>jar</type>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.tika</groupId>
+			<artifactId>tika-core</artifactId>
+			<version>1.2</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
